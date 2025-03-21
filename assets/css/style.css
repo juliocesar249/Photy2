@@ -5,4 +5,5 @@
 
 .gradiente {
     background-image: linear-gradient(#fff 31%, #987257 46%, #FF3931 65%, #4EB9B9 95%);
+    height: inherit;
 }

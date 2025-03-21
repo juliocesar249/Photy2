@@ -2,18 +2,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100%;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.cabecalho--reduzido {
+    position: sticky;
+    align-items: flex-start;
 }
 
 .cabecalho__texto {
+    color: #ACACAC;
     font-family: "Kadwa", serif;
     font-size: 3rem;
     font-weight: 400;
-    color: #ACACAC;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    white-space: nowrap;
 }
 
-.cabecalho__texto--titulo {
+.cabecalho__texto--reduzido {
+    background-color: #0000000e;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 5px;
+    z-index: 0;
+}
+
+.texto__titulo {
+    animation: aparecer 1s linear forwards;
+    display: inline-block;
     font-size: 8rem;
     font-weight: bold;
+    transition: all 0.5s ease;;
+}
+
+.texto__titulo--reduzido {
+    font-size: 3rem;
+}
+
+.cabecalho__texto::after {
+    animation: aparecer 1s linear forwards 1s;
+    content: ', compartilhe fotos e divida experiências.';
+    display: inline-block;
+    opacity: 0;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
