@@ -1,0 +1,14 @@
+.rodape {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    height: 14rem;
+    width: 100%;
+}
+
+.rodape__texto {
+    color: white;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-size: 24px;
+}

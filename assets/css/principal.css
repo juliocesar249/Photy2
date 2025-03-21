@@ -1,0 +1,75 @@
+.principal {
+
+}
+
+.principal__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    max-width: 100%;
+    padding: 0.3rem 10rem;
+    width: 100%;
+}
+
+.container__card {
+    display: grid;
+    justify-content: center;
+    gap: 0.7rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.container__card--primeiro {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.container__card--segundo {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.container__card--terceiro {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.card__imagem {
+    grid-column: 1;
+}
+
+.card__imagem--invertido {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card__imagem > img{
+    border-radius: 10px;
+    display: block;
+    height: 520px;
+}
+
+.card__imagem--vertical > img {
+    height: 400px;
+}
+
+.container__texto {
+    align-self: end;
+    color: #fff;
+    font-family: "Kadwa", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    white-space: normal;
+}
+
+.container__texto--invertido {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    text-align: end;
+    width: 80%;
+}
